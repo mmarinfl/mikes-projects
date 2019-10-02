@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+  Name: Mike Marinelli
+  Date Created: 9/27/2019
+  Most recent revision:
+-->
+
+<html lang="en">
+  <head>
+    <title>Snack Shack - Contact Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+    <style>
+      form {
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      input[type=text] {
+        text-align: center;
+        margin: 8px 0px;
+          width: 200px;
+      }
+      select {
+        width:200px;
+      }
+      textarea {
+          width: 200px;
+          height: 100px;
+          resize: none;
+      }
+      .required {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Snack Shack</h1>
+      </header>
+
+      <nav>
+        <hr />
+        <p>
+          <a class="btn badge-pill" href="index.html"><img src="images/home.svg" alt="Home page"></a>
+          <a class="btn badge-pill" href="menu.html">Menu</a>
+          <a class="btn badge-pill" href="Contact-us.html">Contact Us</a>
+        </p>
+        <hr />
+      </nav>
+
+      <form name="contactForm" onsubmit="return validateItems()">
+
+        <div class="row">
+          <label for="name" class="col-4 text-right required">Name:</label>
+          <input type="text" id="name" name="name" class="col-4" /><br />
+        </div>
+        <div class="row">
+          <label for="email" class="col-4 text-right required">Email:</label>
+          <input type="text" id="email" name="email" class="col-4" /><br />
+        </div>
+        <div class="row">
+          <label for="phoneNumber" class="col-4 text-right">Phone:</label>
+          <input type="text" id="phoneNumber" name="phoneNumber" class="col-4" /><br />
+        </div>
+        <div class="row">
+          <label for="reason" class="col-4 text-right required">Reason for Inquiry</label>
+          <select id="reason" name="reason" class="col-4" >
+            <option value="catering" selected>Catering</option>
+            <option value="private">Private Party</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+          </select>
+        </div><br />
+        <div class="row">
+          <label for="info" class="col-4 text-right">Additional Information:</label>
+          <textarea id="info" name="info" class="col-4"></textarea><br />
+        </div>
+        <div class="row">
+          <div id="beenRestaurantBefore" class="col-4 text-right">Have you been to the restaurant?</div>
+          <div class="col text-left">
+            <input type="radio" id="choice1" name="questionnaire" value="choice1" >
+            <label for="choice1">No</label>
+            <input type="radio" id="choice2" name="questionnaire" value="choice2">
+            <label for="choice2">Yes</label>
+          </div>
+        </div>
+        <div class="row">
+          <div id="bestDaysContact" class="col-4 text-right">Best days to contact you:</div>
+          <div class="col text-left">
+            <input type="checkbox" id="monday" name="contact" value="monday">
+            <label for="monday">M</label>
+            <input type="checkbox" id="tuesday" name="contact" value="tuesday">
+            <label for="tuesday">T</label>
+            <input type="checkbox" id="wednesday" name="contact" value="wednesday">
+            <label for="wednesday">W</label>
+            <input type="checkbox" id="thursday" name="contact" value="thursday">
+            <label for="thursday">Th</label>
+            <input type="checkbox" id="friday" name="contact" value="friday">
+            <label for="friday">F</label>
+          </div>
+        </div>
+        <br />
+        <button type="submit" id="submitBtn" class="btn">Submit</button>
+
+      </form>
+
+      <footer>
+        <p>123 Main Street, Naples, FL 33928<br />239-555-1212</p>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/validateItems.js" ></script>
+  </body>
+</html>

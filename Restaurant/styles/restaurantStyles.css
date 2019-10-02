@@ -1,0 +1,43 @@
+/*
+  Name: Mike Marinelli
+  Date Created: 9/27/2019
+  Most recent revision: 09/27/2019
+*/
+/*body {
+  background-color: #fef9ff;
+  font-family: arial, helvetica, sans-serif;
+  color: #0d1f2d;
+  max-width: 900px;
+  margin: 0 auto;
+}*/
+header, footer {
+  background-color: #4682B4;
+  color: #fef8ff;
+  height: 100px;
+  text-align: center;
+  padding-top: 20px;
+}
+header {
+  font-family: 'Permanent Marker', cursive;
+  font-size: xx-large;
+}
+footer {
+
+}
+nav .btn {
+  background-color: #4682B4;
+  color: #fef8ff;
+  margin-right: 5px;
+}
+nav .btn:hover {
+  font-weight: bold;
+}
+nav .btn:visited {
+  color: #000000;
+}
+nav .btn:hover {
+  font-weight: bold;
+}
+/*nav .btn:active {
+  text-decoration: none;
+}*/
